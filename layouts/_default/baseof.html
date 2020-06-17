@@ -1,0 +1,14 @@
+<!doctype html>
+<head>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript" src="./graph.js"></script>
+</head>
+<body>
+  <div class="page">
+    <!-- <div id="chart_div"></div> -->
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+  </div>
+</body>
+</html>
