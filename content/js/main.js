@@ -286,8 +286,31 @@
 		})
 	};
 
+	function daysSoFar() {
+		var today = new Date();
+		var startDate = new Date(2020, 0, 28);
+	
+		var _doneDate = today.getTime() - startDate.getTime();
+		var doneDate = Math.ceil(_doneDate / (1000 * 60 * 60 * 24));
+	
+		$('#soFarDays').attr('data-to', doneDate);
+	}
+	
+	function daysLeft() {
+		var today = new Date();
+		var startDate = new Date(2020, 0, 28);
+		var endDate = new Date(2021, 7, 4);
+		
+		var _toDoDate = endDate.getTime() - today;
+		var toDoDate = Math.ceil(_toDoDate / (1000 * 60 * 60 * 24));
+		
+		$('#leftDays').attr('data-to', toDoDate);
+	}
+
 	// Document on load.
 	$(function(){
+		daysSoFar();
+		daysLeft();
 		fullHeight();
 		counter();
 		counterWayPoint();

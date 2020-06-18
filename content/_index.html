@@ -51,20 +51,6 @@ title:
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	<script src="js/days_left.js"></script>
-	<script src="js/days_so_far.js"></script>
-	<!-- Custom score up script 
-		<span class="counter">1183</span>
-			<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-			<script src="./js/jquery.counterup.min.js"></script>
-	<script>
-		jQuery(document).ready(function($) {
-            $('.counter').counterUp({
-                delay: 10,
-                time: 1000
-            });
-        });
-	</script> -->
 	</head>
 	<body>
 	<div id="colorlib-page">
@@ -190,7 +176,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			</section>
 
 			
-			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/last-call.jpg);" data-stellar-background-ratio="0.5">
+			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/sea-with-wg.png);" data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>
 				<div class="colorlib-narrow-content">
 					<div class="row">
@@ -201,18 +187,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							<span class="colorlib-counter-label">Total days</span>
 						</div>
 						<div class="col-md-3 text-center animate-box">
-							<script type="text/javascript">
-								$('.js-counter').countTo({to: 500});
-							</script>
-							<span id="power" class="colorlib-counter js-counter" data-from="0" data-to="0" data-speed="5000" data-refresh-interval="50"></span>
+							<span id="soFarDays" class="colorlib-counter js-counter" data-from="0" data-to="0" data-speed="5000" data-refresh-interval="50"></span>
 							<span class="colorlib-counter-label">Days so far</span>
 						</div>
 						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="0" data-speed="5000" data-refresh-interval="50"></span>
+							<span id="leftDays" class="colorlib-counter js-counter" data-from="0" data-to="0" data-speed="5000" data-refresh-interval="50"></span>
 							<span class="colorlib-counter-label">Days left</span>
 						</div>
 						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="2" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="0" data-speed="5000" data-refresh-interval="50"></span>
 							<span class="colorlib-counter-label">Off-days so far</span>
 						</div>
 					</div>
