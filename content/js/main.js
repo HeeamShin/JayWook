@@ -292,7 +292,7 @@
 		var _month = _today.getMonth();
 		var _day = _today.getDate();
 
-		var today = new Date(2021, 3, 4);
+		var today = new Date(_year, _month, _day);
 
 		var startDate = new Date(2020, 0, 28);
 		var _doneDate = today.getTime() - startDate.getTime();
