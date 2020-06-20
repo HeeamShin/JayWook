@@ -67,6 +67,7 @@ title:
 				<div id="navbar" class="collapse">
 					<ul>
 						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#" data-nav-section="percentage">Percentage</a></li>
 						<li><a href="#" data-nav-section="experience">Experience</a></li>
 						<li><a href="#" data-nav-section="gallery">Gallery</a></li>
 					</ul>
@@ -100,7 +101,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					   					<div class="desc">
 						   					<h1>Hi! <br>I'm Jay Wook</h1>
 						   					<h2>Brave Korean soldier</h2>
-												<p><a class="btn btn-primary btn-learn" href="#graph">View Date-Graph<i class="icon-download4"></i></a></p>
+												<p><a class="btn btn-primary btn-learn" href="#percentage-nav">View Date-Graph<i class="icon-download4"></i></a></p>
 											</div>
 					   				</div>
 					   			</div>
@@ -115,8 +116,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					   				<div class="slider-text-inner">
 					   					<div class="desc">
 						   					<h1 style="color: rgb(241, 238, 56);">I am <br>a Soldier</h1>
-												<h2 style="color: rgb(241, 238, 56);">I'm still Private!</h2>
-												<p style="color: rgb(241, 238, 56);"><a class="btn btn-primary btn-learn" href="#graph">View Date-Graph <i class="icon-briefcase3"></i></a></p>
+												<h2 style="color: rgb(241, 238, 56);">I'm Private First Class!</h2>
+												<p style="color: rgb(241, 238, 56);"><a class="btn btn-primary btn-learn" href="#percentage-nav">View Date-Graph<i class="icon-briefcase3"></i></a></p>
 											</div>
 					   				</div>
 					   			</div>
@@ -126,7 +127,89 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				  	</ul>
 			  	</div>
 			</section>
-			
+
+			<section class="colorlib-skills" data-section="percentage" id="percentage-nav">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Service Summary</span>
+							<h2 class="colorlib-heading animate-box">Percentage</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<p>Go JW, go! Get the higher rank!</p>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3><img src="./images/private.png" width="12px" height="12px">Private</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="100"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:100%">
+								    <span>100%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3><img src="./images/private-first-class.png" width="12px" height="12px">Private First Class</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="50"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:50%">
+								    <span>50%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3><img src="./images/corporal.png" width="12px" height="12px">Corporal</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="0"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:0%">
+								    <span>0%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3><img src="./images/sergeant.png" width="12px" height="12px">Sergeant</h3> 
+								<div class="progress">
+								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="0"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:0%">
+								    <span>0%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Total</h3>
+								<div class="progress">
+								 	<div id="total-days-div" class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+								    <span id="total-days-span">70%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>SEO</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								    <span>80%</span>
+								  	</div>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</section>
+
 			<div class="col-md-12">
 				<div class="about-desc">
 					<span class="heading-meta">Military Service</span>
@@ -158,14 +241,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					</div>
 				</div>
 			</div>
-			<div id="chart_div"></div>
+			<!-- <div id="chart_div"></div> -->
 
 			<section class="colorlib-experience" data-section="experience">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 							<span class="heading-meta">Experience</span>
-							<h2 class="colorlib-heading animate-box">Work Experience</h2>
+							<h2 class="colorlib-heading animate-box">Life Journey Map</h2>
 						</div>
 					</div>
 					<div class="row">
@@ -209,12 +292,22 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-4">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2>Private - Korean Army <span>2020.01 - 2020.03</span></h2>
+					               </div>
+					            </div>
+					         </article>
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-5">
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
-					               	<h2>Private - Korean Army <span>2020-Now</span></h2>
-					                  <p>Comming Soon</p>
+					               	<h2>Private First Class - Korean Army <span>2020.03 - Now</span></h2>
+					                  <p>He is very powerful.</p>
 					               </div>
 					            </div>
 					         </article>
