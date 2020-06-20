@@ -305,9 +305,40 @@
 		$('#leftDays').attr('data-to', toDoDate);
 	}
 
+	function percentageCal() {
+		var _today = new Date();
+		var _year = _today.getFullYear();
+		var _month = _today.getMonth();
+		var _day = _today.getDate();
+
+		var today = new Date(_year, _month, _day);
+
+		var startDate = new Date(2020, 0, 28);
+		var _doneDate = today.getTime() - startDate.getTime();
+		var doneDate = (_doneDate / (1000 * 60 * 60 * 24)) + 1;
+		
+		var endDate = new Date(2021, 7, 4);
+		var _toDoDate = endDate.getTime() - today.getTime();
+		var toDoDate = _toDoDate / (1000 * 60 * 60 * 24);
+
+		var totalDate = doneDate + toDoDate;
+		var _totalDatePer = (doneDate / totalDate) * 100;
+		var totalDatePer = _totalDatePer.toFixed();
+		var totalDatePerStr = String(totalDatePer);
+		// <div id="total-days-div" class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+		// 									aria-valuemin="0" aria-valuemax="100" style="width:70%">
+		// 									<span id="total-days-span">70%</span>
+		var spanText = document.getElementById("total-days-span");
+		spanText.innerText = totalDatePerStr + "%";
+		$('#total-days-div').attr('style', "width:" + totalDatePerStr + "%");
+		$('#total-days-div').attr('aria-valuenow', totalDatePerStr);
+	}
+
 	// Document on load.
 	$(function(){
 		daysCal();
+		percentageCal();
+		
 		fullHeight();
 		counter();
 		counterWayPoint();
